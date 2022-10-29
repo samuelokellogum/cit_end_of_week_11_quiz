@@ -33,7 +33,7 @@ cors = CORS()
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = "weowiueroieufm"
-    app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///todos.db"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///tasks_test.db"
     db.init_app(app)
     ma.init_app(app)
     mail.init_app(app)
