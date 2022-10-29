@@ -10,5 +10,5 @@ class UserSchema(Schema):
 
 class TaskSchema(SQLAlchemyAutoSchema):
     class Meta:
-        model = Todo
+        model = Task
         include_fk = True

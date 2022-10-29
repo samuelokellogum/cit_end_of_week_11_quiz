@@ -1,5 +1,5 @@
 from datetime import datetime
-from todosapp import db
+from tasksapp import db
 from hashlib import sha256
 
 
@@ -8,6 +8,7 @@ class ExtraMixin(object):
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
+    
     def save(self):
         db.session.add(self)
         db.session.commit()

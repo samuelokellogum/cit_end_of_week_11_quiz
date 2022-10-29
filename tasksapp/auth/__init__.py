@@ -1,4 +1,4 @@
-from tasksapp.tasks.resource import AuthResource
+from tasksapp.tasks.resource import TasksResource
 
 
 def auth_routes(api):

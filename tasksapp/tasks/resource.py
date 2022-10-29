@@ -1,5 +1,5 @@
 from datetime import datetime
-from todosapp.models import Task
+from tasksapp.models import Task
 from flask_jwt_extended import get_jwt_identity, jwt_required
 from flask_restful import Resource, reqparse
 
