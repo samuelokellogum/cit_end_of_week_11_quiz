@@ -32,7 +32,7 @@ cors = CORS()
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = "weowiueroieufm"
+    app.config['SECRET_KEY'] = "ed1c38faa6dfd53a4dcbfc4fe147cc9a8fca40531ee505205403a6cb02d5457e"
     app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///tasks_test.db"
     db.init_app(app)
     ma.init_app(app)
